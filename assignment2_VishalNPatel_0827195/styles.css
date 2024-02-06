@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #3498db; 
+}
+
+#personal-projects {
+    background-color: #2ecc71; 
+}
+
+#contact {
+    background-color: #e74c3c; 
+}
+
+h1, h2 {
+    font-size: 24px; 
+}
+
+.project img {
+    width: 100%; 
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #34495e; 
+    color: white;
+}
