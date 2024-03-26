@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oceanology Website</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Set a light background color */
+    }
+    .navbar {
+      background-color: #007bff; /* Set navbar background color */
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .card {
+      transition: transform 0.3s; /* Add smooth transition effect on card hover */
+    }
+    .card:hover {
+      transform: translateY(-5px); /* Move card up on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Oceanology</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <!-- Your Name -->
+    <h1 class="text-primary">Your Name</h1>
+
+    <!-- Marine Cards Section -->
+    <div class="row mt-4">
+      <!-- Marine Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Marine Image">
+          <div class="card-body">
+            <h5 class="card-title">Marine Life</h5>
+            <p class="card-text">Description about marine life...</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#marineModal1">Learn more</button>
+          </div>
+        </div>
+      </div>
+      <!-- Marine Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Marine Image">
+          <div class="card-body">
+            <h5 class="card-title">Ocean Currents</h5>
+            <p class="card-text">Description about ocean currents...</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#marineModal2">Learn more</button>
+          </div>
+        </div>
+      </div>
+      <!-- Marine Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Marine Image">
+          <div class="card-body">
+            <h5 class="card-title">Coral Reefs</h5>
+            <p class="card-text">Description about coral reefs...</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#marineModal3">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <!-- Marine Modal 1 -->
+  <div class="modal fade" id="marineModal1" tabindex="-1" role="dialog" aria-labelledby="marineModal1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="marineModal1Label">Marine Life</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>More details about marine life...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marine Modal 2 -->
+  <div class="modal fade" id="marineModal2" tabindex="-1" role="dialog" aria-labelledby="marineModal2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="marineModal2Label">Ocean Currents</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>More details about ocean currents...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marine Modal 3 -->
+  <div class="modal fade" id="marineModal3" tabindex="-1" role="dialog" aria-labelledby="marineModal3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="marineModal3Label">Coral Reefs</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>More details about coral reefs...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script
